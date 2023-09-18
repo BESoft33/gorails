@@ -1,0 +1,16 @@
+
+
+  <div class="container flex ">
+    <div class="flex flex-col w-100 mx-auto">
+    <% @tasks.each do |task|%>
+      <div class="bg-purple-50 h-12 w-100 my-2 align-center flex px-16 gap-12">
+        <div class="self-center w-1/2"> 
+          <span class="text-teal-700 min-w-max"><%= task.task %></span>
+        </div>
+        <div class="self-center">
+          <span class="text-teal-700 min-w-max"><%= task.complete_by %></span>
+        </div>
+      </div>
+    <% end %>
+    </div>
+  </div>

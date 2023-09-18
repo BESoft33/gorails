@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your App</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+</head>
+<body>
+  <nav class="w-100 mx-auto bg-teal-700 text-teal-200 h-12 flex items-center justify-center">
+    <a href="#" class="mx-12">Home<a>
+    <a href="#" class="mx-12">About<a>
+    <a href="#" class="mx-12">Contact<a>
+  </nav>
+
+  <%= yield %>
+
+  <footer>
+    <div class="bg-gray-300 grid grid-cols-3 gap-4">
+      <div class="mx-auto">One</div>
+      <div class="mx-auto">One</div>
+      <div class="mx-auto">One</div>
+    
+    </div>
+    <div class="text-center bg-gray-300">
+      <p>Follow us on</p>
+      <span class="mx-4">Facebook</span>
+      <span class="mx-4">Facebook</span>
+      <span class="mx-4">Facebook</span>
+      <span class="mx-4">Facebook</span>
+      <span class="mx-4">Facebook</span>
+    </div>
+  </footer>
+</body>
+</html>
